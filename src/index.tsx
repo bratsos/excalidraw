@@ -580,7 +580,7 @@ class App extends React.Component<{}, AppState> {
       });
       this.forceUpdate();
       event.preventDefault();
-    } else if (event.key === "a" && event.metaKey) {
+    } else if (event.key.toLowerCase() === "a" && event.metaKey) {
       elements.forEach(element => {
         element.isSelected = true;
       });
